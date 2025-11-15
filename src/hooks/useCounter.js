@@ -1,7 +1,8 @@
+import { useForm } from './hooks/useForm'
 import { useState } from "react"
 
 export const useCounter = (initialValue = 0) => {
-    
+        
   const [counter, setCounter] = useState(initialValue)
   
   
@@ -14,8 +15,6 @@ export const useCounter = (initialValue = 0) => {
     const decrement = () => {
         setCounter(counter - 1)
     }
-
-
 
 return {
    counter,

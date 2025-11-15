@@ -1,4 +1,4 @@
-import { CounterApp } from './components/CounterApp'
+import { FormsApp } from "./components/FormsApp"
 
 export const HooksApp = () => {
   return (
@@ -6,7 +6,7 @@ export const HooksApp = () => {
     <h1>Aplicación de Hooks</h1>
     <hr />
 
-    <CounterApp/>
+    <FormsApp/>
 
 
     </>

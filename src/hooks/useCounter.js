@@ -1,4 +1,4 @@
-import { useForm } from './hooks/useForm'
+import { useForm } from './useForm'
 import { useState } from "react"
 
 export const useCounter = (initialValue = 0) => {

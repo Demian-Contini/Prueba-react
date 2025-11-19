@@ -1,4 +1,5 @@
-import {useForm} from "../Hooks/useForm"
+import { useEffect, useRef} from "react"
+import {useForm} from "../hooks/useForm"
 export const FormsApp = () => {
 
 const initialForm = {
@@ -16,6 +17,12 @@ const handleSubmit = (event) => {
     event.preventDefault()
     console.log(formState)
 }
+const focusRef = useRef()
+
+useEffect(() => {
+  focusRef.current.focus()
+
+}, [])
 
 
   return (
@@ -24,6 +31,7 @@ const handleSubmit = (event) => {
   <div className="mb-3">
     <label htmlFor="username" className="form-label">Username</label>
     <input 
+    ref={focusRef}
     type="text" 
     className="form-control" 
     id="username"

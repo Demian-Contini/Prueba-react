@@ -3,7 +3,7 @@ import { useEffect } from "react"
 import { useFetch } from "../hooks/useFetch"
 
 // Componente principal para mostrar datos.
-export const FetchApp = () => {
+export const FetchComponent = () => {
     
     const url = 'https://jsonplaceholder.typicode.com/users'
 

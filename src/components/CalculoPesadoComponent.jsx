@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useMemo } from "react";
 
-export const CalculoPesadoApp = () => {
+export const CalculoPesadoComponent = () => {
   
   
   const [show, setShow] = useState(true)
